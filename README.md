@@ -1,10 +1,8 @@
-# 🚀 Sudip Kandel - Portfolio
+# Sudip Kandel - Portfolio
 
 A modern, responsive portfolio website built with Astro, React, and Tailwind CSS, showcasing my projects, skills, as a full-stack developer.
 
-![Portfolio Preview](https://sudip-kandel.com.np/og.png)
-
-## 🌐 Live Demo
+## Live Demo
 
 Visit: [sudip-kandel.com.np](https://sudip-kandel.com.np)
 
@@ -26,7 +24,7 @@ Visit: [sudip-kandel.com.np](https://sudip-kandel.com.np)
 - **npm** - Package manager
 - **GitHub Actions** - CI/CD pipeline
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -70,7 +68,7 @@ The built site will be in the `dist/` directory.
 npm run preview
 ```
 
-## 📄 Pages
+## Pages
 
 - **Home** (`/`) - Hero section, tech slider, about preview, and featured projects
 - **Projects** (`/projects`) - Complete showcase of all projects with filters
