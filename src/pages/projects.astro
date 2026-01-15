@@ -1,0 +1,63 @@
+---
+import "../styles/projects.css";
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/commons/hero/hero.astro";
+import ProjectCard from "../components/project/projectCard.astro";
+import { projects } from "../data/projectData.js";
+---
+
+<Layout title="Projects" description="Projects">
+  <Hero title="Projects" />
+
+  <!-- Cards -->
+  <div
+    id="projects-container"
+    class="flex flex-wrap justify-center gap-5 px-3 pt-5 xl:px-32 2xl:px-60"
+  >
+    {projects.map((project, index) => (
+      <ProjectCard
+        index={index}
+        title={project.title}
+        descripcion={project.descripcion}
+        image={project.image}
+        tecnologies={project.tecnologies}
+        demo={project.demo}
+        code={project.code}
+      />
+    ))}
+  </div>
+
+  <div class="flex justify-center mt-8">
+    <button
+      id="load-more"
+      class="px-6 py-2 cursor-pointer bg-[#69c7c7] text-[#1d1250] font-bold rounded-full hover:bg-[#46caca] drop-shadow-[2px_2px_0_#7836cf] active:translate-y-0.5 active:drop-shadow-none transition-all"
+    >
+      Ver más
+    </button>
+  </div>
+</Layout>
+
+<script is:inline>
+(function() {
+  const INITIAL_VISIBLE = 12;
+  let itemsToShow = INITIAL_VISIBLE;
+  const cards = Array.from(document.querySelectorAll("[data-index]"));
+  const loadMoreBtn = document.getElementById("load-more");
+
+  function updateCards() {
+    cards.forEach((card, i) => {
+      card.style.display = i < itemsToShow ? "flex" : "none";
+    });
+
+    loadMoreBtn.style.display = itemsToShow < cards.length ? "block" : "none";
+  }
+
+  loadMoreBtn.onclick = () => {
+    itemsToShow += INITIAL_VISIBLE;
+    updateCards();
+  };
+
+  // Initialize
+  updateCards();
+})();
+</script>
