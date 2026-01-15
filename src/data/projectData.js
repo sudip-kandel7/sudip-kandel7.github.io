@@ -2,7 +2,6 @@ import blogger from "../assets/img-projects/blogger.png";
 import gym from "../assets/img-projects/gym.png";
 import weather from "../assets/img-projects/weather.png";
 import ttt from "../assets/img-projects/tic-tac-toe.png";
-import weather from "../assets/img-projects/weather.png";
 import simon from "../assets/img-projects/simon.png";
 import calcy from "../assets/img-projects/calcy.png";
 import todo from "../assets/img-projects/todo.png";
