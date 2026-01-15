@@ -15,7 +15,6 @@ const links = [
   <!-- Input control (peer) -->
   <input id="menu-toggle" type="checkbox" class="peer hidden md:hidden" />
 
-  <!-- Navbar -->
   <nav
     class="fixed top-0 left-0 w-full z-50 bg-gray-950/20 backdrop-blur-md border-b border-white/10"
   >
@@ -29,7 +28,6 @@ const links = [
         </h3>
       </a>
 
-      <!-- Desktop Links -->
       <ul id="navbar-links" class="hidden md:flex items-center space-x-8">
         {
           links.map((link) => (
@@ -80,7 +78,6 @@ const links = [
     </div>
   </nav>
 
-  <!-- Overlay (mobile only) -->
   <label
     for="menu-toggle"
     class="fixed inset-0 bg-black/60 hidden peer-checked:block cursor-pointer z-40 md:hidden"

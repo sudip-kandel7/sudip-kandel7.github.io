@@ -6,10 +6,9 @@ import ProjectCard from "../components/project/projectCard.astro";
 import { projects } from "../data/projectData.js";
 ---
 
-<Layout title="Projects" description="Projects">
+<Layout pageTitle="Projects" description="Showcase projects by Sudip Kandel, built using HTML, CSS, Ejs, Js, Php, Java, React, and Tailwind.">
   <Hero title="Projects" />
 
-  <!-- Cards -->
   <div
     id="projects-container"
     class="flex flex-wrap justify-center gap-5 px-3 pt-5 xl:px-32 2xl:px-60"
@@ -27,14 +26,6 @@ import { projects } from "../data/projectData.js";
     ))}
   </div>
 
-  <div class="flex justify-center mt-8">
-    <button
-      id="load-more"
-      class="px-6 py-2 cursor-pointer bg-[#69c7c7] text-[#1d1250] font-bold rounded-full hover:bg-[#46caca] drop-shadow-[2px_2px_0_#7836cf] active:translate-y-0.5 active:drop-shadow-none transition-all"
-    >
-      Ver más
-    </button>
-  </div>
 </Layout>
 
 <script is:inline>
@@ -57,7 +48,6 @@ import { projects } from "../data/projectData.js";
     updateCards();
   };
 
-  // Initialize
   updateCards();
 })();
 </script>
