@@ -2,7 +2,6 @@ import blogger from "../assets/img-projects/blogger.png";
 import gym from "../assets/img-projects/gym.png";
 import weather from "../assets/img-projects/weather.png";
 import ttt from "../assets/img-projects/tic-tac-toe.png";
-import weather from "../assets/img-projects/weather.png";
 
 export const projects = [
   {
