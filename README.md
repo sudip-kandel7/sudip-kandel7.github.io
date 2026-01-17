@@ -141,7 +141,7 @@ The workflow file (`.github/workflows/deploy.yml`) handles:
 - Twitter: [@paade_07](https://x.com/paade_07/)
 - Email: sudipkandel27@gmail.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Icons from [React Icons](https://react-icons.github.io/react-icons/)
 - Tech icons from [Devicon](https://devicon.dev/)
