@@ -76,7 +76,7 @@ npm run preview
 - **Contact** (`/contact`) - Social links and contact information
 - **404** - Custom error page
 
-## 🎨 Key Components
+## Key Components
 
 ### React Components
 
@@ -93,7 +93,7 @@ npm run preview
 - `skills.astro` - Technology showcase grid
 - `footer.astro` - Site footer with links
 
-## 🔧 Configuration
+## Configuration
 
 ### Site URL
 
@@ -117,7 +117,7 @@ Add or modify projects in:
 - `src/data/projectData.js` (all projects)
 - `src/data/projectsAboutData.js` (featured projects)
 
-## 🚢 Deployment
+## Deployment
 
 This project uses GitHub Actions for automatic deployment to GitHub Pages.
 
@@ -133,7 +133,7 @@ The workflow file (`.github/workflows/deploy.yml`) handles:
 - Building the site
 - Deploying to GitHub Pages
 
-## 📞 Contact
+## Contact
 
 - Portfolio: [sudip-kandel.com.np](https://sudip-kandel.com.np)
 - GitHub: [@sudip-kandel7](https://github.com/sudip-kandel7)
